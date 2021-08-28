@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="index.css">
+  <title>Dynamic Webpage</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div id="title">Our <span id="pink-text">Store</span></div>
+    <button class="btn" value="all">ALL</button>
+    <button class="btn" value="cakes">CAKES</button>
+    <button class="btn" value="cupcakes">CUPCAKES</button>
+    <button class="btn" value="sweets">SWEETS</button>
+    <button class="btn" value="donuts">DONUTS</button>
+    <div class="input-group">
+      <span class="input-group-icon"><i class="fas fa-search"></i></span>
+      <input id="input" type="text" placeholder="item..." />
+    </div>
+    <div class="grid">
+      <div class="grid-item item-1" data-item="sweets">
+        <div class="grid-item-image">
+          <img src="https://github.com/JS-Beginners/filter-project/blob/main/img/sweets-1.jpeg?raw=true" class="image">
+          <div class="cart-icon"><i class="fas fa-shopping-cart"></i></div>
+        </div>
+        <div class="grid-item-desc">Sweet Item</div>
+        <div class="grid-item-price">$5</div>
+      </div>
+
+      <div class="grid-item item-2" data-item="cupcakes">
+        <div class="grid-item-image">
+          <img src="https://github.com/JS-Beginners/filter-project/blob/main/img/cupcake-1.jpeg?raw=true" class="image">
+          <div class="cart-icon"><i class="fas fa-shopping-cart"></i></div>
+        </div>
+        <div class="grid-item-desc">Cupcake Item</div>
+        <div class="grid-item-price">$5</div>
+      </div>
+
+      <div class="grid-item item-3" data-item="cakes">
+        <div class="grid-item-image">
+          <img src="https://github.com/JS-Beginners/filter-project/blob/main/img/cake-1.jpeg?raw=true" class="image">
+          <div class="cart-icon"><i class="fas fa-shopping-cart"></i></div>
+        </div>
+        <div class="grid-item-desc">Cake Item</div>
+        <div class="grid-item-price">$5</div>
+      </div>
+
+      <div class="grid-item item-4" data-item="donuts">
+        <div class="grid-item-image">
+          <img src="https://github.com/JS-Beginners/filter-project/blob/main/img/doughnut-1.jpeg?raw=true"
+            class="image">
+          <div class="cart-icon"><i class="fas fa-shopping-cart"></i></div>
+        </div>
+        <div class="grid-item-desc">Donut Item</div>
+        <div class="grid-item-price">$5</div>
+      </div>
+
+      <div class="grid-item item-5" data-item="sweets">
+        <div class="grid-item-image">
+          <img src="https://github.com/JS-Beginners/filter-project/blob/main/img/sweets-2.jpeg?raw=true" class="image">
+          <div class="cart-icon"><i class="fas fa-shopping-cart"></i></div>
+        </div>
+        <div class="grid-item-desc">Sweet Item</div>
+        <div class="grid-item-price">$10</div>
+      </div>
+
+      <div class="grid-item item-6" data-item="cupcakes">
+        <div class="grid-item-image">
+          <img src="https://github.com/JS-Beginners/filter-project/blob/main/img/cupcake-2.jpeg?raw=true" class="image">
+          <div class="cart-icon"><i class="fas fa-shopping-cart"></i></div>
+        </div>
+        <div class="grid-item-desc">Cupcake Item</div>
+        <div class="grid-item-price">$10</div>
+      </div>
+
+      <div class="grid-item item-7" data-item="cakes">
+        <div class="grid-item-image">
+          <img src="https://github.com/JS-Beginners/filter-project/blob/main/img/cake-2.jpeg?raw=true" class="image">
+          <div class="cart-icon"><i class="fas fa-shopping-cart"></i></div>
+        </div>
+        <div class="grid-item-desc">Cake Item</div>
+        <div class="grid-item-price">$10</div>
+      </div>
+
+      <div class="grid-item item-8" data-item="donuts">
+        <div class="grid-item-image">
+          <img src="https://github.com/JS-Beginners/filter-project/blob/main/img/doughnut-2.jpeg?raw=true"
+            class="image">
+          <div class="cart-icon"><i class="fas fa-shopping-cart"></i></div>
+        </div>
+        <div class="grid-item-desc">Donut Item</div>
+        <div class="grid-item-price">$10</div>
+      </div>
+
+      <div class="grid-item item-9" data-item="sweets">
+        <div class="grid-item-image">
+          <img src="https://github.com/JS-Beginners/filter-project/blob/main/img/sweets-3.jpeg?raw=true" class="image">
+          <div class="cart-icon"><i class="fas fa-shopping-cart"></i></div>
+        </div>
+        <div class="grid-item-desc">Sweet Item</div>
+        <div class="grid-item-price">$15</div>
+      </div>
+
+      <div class="grid-item item-10" data-item="cupcakes">
+        <div class="grid-item-image">
+          <img src="https://github.com/JS-Beginners/filter-project/blob/main/img/cupcake-3.jpeg?raw=true" class="image">
+          <div class="cart-icon"><i class="fas fa-shopping-cart"></i></div>
+        </div>
+        <div class="grid-item-desc">Cupcake Item</div>
+        <div class="grid-item-price">$15</div>
+      </div>
+
+      <div class="grid-item item-11" data-item="cakes">
+        <div class="grid-item-image">
+          <img src="https://github.com/JS-Beginners/filter-project/blob/main/img/cake-3.jpeg?raw=true" class="image">
+          <div class="cart-icon"><i class="fas fa-shopping-cart"></i></div>
+        </div>
+        <div class="grid-item-desc">Cake Item</div>
+        <div class="grid-item-price">$15</div>
+      </div>
+
+      <div class="grid-item item-12" data-item="donuts">
+        <div class="grid-item-image">
+          <img src="https://github.com/JS-Beginners/filter-project/blob/main/img/doughnut-3.jpeg?raw=true"
+            class="image">
+          <div class="cart-icon"><i class="fas fa-shopping-cart"></i></div>
+        </div>
+        <div class="grid-item-desc">Donut Item</div>
+        <div class="grid-item-price">$15</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- modal section -->
+  <div class="modal">
+    <div class="modal-container">
+      <div id="close-btn" class="modal-btn">
+        <i class="fas fa-times fa-2x"></i>
+      </div>
+      <div class="modal-group">
+        <div id="left-btn" class="modal-btn nav-btn">
+          <i class="fas fa-caret-left fa-4x"></i>
+        </div>
+        <div class="modal-image-container"></div>
+        <div id="right-btn" class="modal-btn nav-btn">
+          <i class="fas fa-caret-right fa-4x"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>

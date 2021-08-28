@@ -1,0 +1,205 @@
+:root {
+  --main-pink: #ef7998;
+  --main-yellow: rgb(249, 228, 148);
+}
+
+body {
+  text-align: center;
+  background-color: #eeeeee;
+  font-family: 'Kaushan Script';
+  font-size: 1rem;
+  padding-top: 2rem;
+  margin: 0;
+}
+
+#title {
+  font-size: 2.4rem;
+}
+
+#pink-text {
+  color: var(--main-pink);
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+.btn {
+  font-family: inherit;
+  font-size: inherit;
+  background: none;
+  border: 1px solid #000;
+  border-radius: 4px;
+  padding: 0.4rem 0.7rem;
+  margin: 15px 25px 10px;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #000;
+  color: var(--main-pink);
+}
+
+#search-symbol {
+  background-color: var(--main-pink);
+  border-radius: 2px;
+}
+
+#input {
+  font-family: inherit;
+  padding: 0.4rem;
+  width: 40%;
+  font-size: inherit;
+  margin: 10px 0 4px;
+  outline: none;
+}
+
+.input-group-icon {
+  background-color: var(--main-pink);
+  padding: 0.54rem 0.7rem;
+  margin-right: -0.27rem;
+  z-index: 2;
+}
+
+.grid {
+  display: grid;
+  padding: 2rem 5rem 4rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-rows: auto;
+  grid-gap: 30px;
+}
+
+.grid-item {
+  display: block;
+  background-color: #fff;
+  font-size: 1.2rem;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.grid-item-image {
+  position: relative;
+  overflow: hidden;
+  border-radius: 2px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.grid-item-image:hover img {
+  transform: scale(1.2);
+  transition: all 1s ease-in-out;
+}
+
+.cart-icon {
+  transition: all 1s ease-in-out;
+  transform: translate(100%, 100%);
+}
+
+.grid-item-image:hover .cart-icon {
+  transform: translate(0, 0);
+}
+
+.fa-shopping-cart {
+  position: absolute;
+  bottom: 2.5%;
+  right: 0%;
+  z-index: 2;
+  color: #000;
+  background-color: var(--main-yellow);
+  padding: 1rem 0.7rem;
+  border-top-left-radius: 1rem;
+}
+
+.grid-item-desc {
+  display: block;
+  float: left;
+  margin-left: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.grid-item-price {
+  display: block;
+  float: right;
+  margin-right: 20px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.modal {
+  visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.85);
+  height: 100vh;
+}
+
+.modal-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  max-width: 800px;
+  height: 80%;
+  z-index: 1000;
+}
+
+#close-btn {
+  display: flex;
+  align-self: flex-end;
+  background-color: var(--main-pink);
+  height: 35px;
+  width: 40px;
+  border-radius: 4px;
+  margin: 0 1vw 1vw;
+}
+
+#close-btn:hover {
+  transition: background-color 1s ease-in-out;
+  background-color: var(--main-yellow);
+  cursor: pointer;
+}
+
+.fa-times {
+  color: gray;
+  margin: auto;
+}
+
+.modal-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.nav-btn {
+  color: var(--main-pink);
+  margin: 0 1vw;
+}
+
+.nav-btn:hover {
+  transition: all 1s ease-in-out;
+  color: var(--main-yellow);
+  cursor: pointer;
+}
+
+.modal-image-container {
+  width: 100%;
+  height: 100%;
+  background: url('https://github.com/JS-Beginners/Modal-JavaScript-Project/blob/master/img/cake-1.jpeg?raw=true');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 4px;
+}
