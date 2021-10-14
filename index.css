@@ -4,6 +4,8 @@
 }
 
 body {
+  display: flex;
+  justify-content: center;
   text-align: center;
   background-color: #eeeeee;
   font-family: 'Kaushan Script';
@@ -202,4 +204,23 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 4px;
+}
+
+@media (max-width: 500px) {
+  .wrapper {
+    margin: 0 1rem;
+  }
+
+  .btn {
+    margin: 0;
+  }
+
+  .btn:last-of-type {
+    margin-top: 4px;
+  }
+
+  #input {
+    width: 65%;
+    margin: 35px 0 4px;
+  }
 }
